@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        /* var a = parseInt(prompt("Введите число: "));
+        if(a%2==0)
+        {
+            alert("Четное");
+        }
+        else if (a%2!=0)
+        {
+            alert("Нечетное");
+        }
+        else
+        {
+            alert("Error");
+        }*/
+
+        //2
+        /*var a = parseInt(prompt("Введите первое число: "));
+        var b = parseInt(prompt("Введите второе число: "));
+        if(a<b)
+        {
+            alert(a + " меньше " + b)
+        }
+        else if(a>b)
+        {
+            alert(b + " меньше " + a)
+        }
+        else if(a==b)
+        {
+            alert(b + " равно " + a)
+        }
+        else
+        {
+            alert("Error");
+        }*/
+
+        //3
+        /*var a = parseInt(prompt("Введите число: "));
+        if(a<0)
+        {
+            alert("Знак числа отрицательный");
+        }
+        else if (a>0)
+        {
+            alert("Знак числа положительный");
+        }
+        else if (a=0)
+        {
+            alert("Это ноль");
+        }
+        else
+        {
+            alert("Error");
+        }*/
+
+        //4
+        /*var a = parseInt(prompt("Введите первое число: "));
+        var b = parseInt(prompt("Введите второе число: "));
+        var c = parseInt(prompt("Введите третье число: "));
+        if (a >= b && a >= c) 
+        {
+            alert("Наибольшее число: " + a);
+        }
+        else if (b >= a && b >= c) 
+        {
+            alert("Наибольшее число: " + b);
+        }
+        else 
+        {
+            alert("Наибольшее число: " + c);
+        }*/
+
+        //5
+        /*var a = parseFloat(prompt("Введите первое дробное число: "));
+        var b = parseFloat(prompt("Введите второе дробное число: "));
+        var menu = "Выберите вычисление:\n" + "1) a + b\n" + "2) a - b\n" + "3) a * b\n" + "4) a / b";
+        var choice = parseInt(prompt(menu));
+        var result;
+        if (choice === 1) 
+        {
+            result = a + b;
+            alert("Ответ: " + a + " + " + b + " = " + result);
+        } 
+        else if (choice === 2) 
+        {
+            result = a - b;
+            alert("Ответ: " + a + " - " + b + " = " + result);
+        } 
+        else if (choice === 3) 
+        {
+            result = a * b;
+            alert("Ответ: " + a + " * " + b + " = " + result);
+        } 
+        else if (choice === 4) 
+        {
+            if (b !== 0) 
+            {
+                result = a / b;
+                alert("Ответ: " + a + " / " + b + " = "  + result);
+            } 
+            else 
+            {
+                alert("Нельзя делить на ноль");
+            }
+        } 
+        else 
+        {
+            alert("Error");
+        }*/
+
+        //6
+        /*var a = parseFloat(prompt("Введите число: "));
+        if (a >= 1 && a <= 30) 
+        {
+            alert("Число " + a + " принадлежит диапазону от 1 до 30");
+        } 
+        else 
+        {
+            alert("Число " + a + " не принадлежит диапазону от 1 до 30");
+        }*/
+
+        //7
+        /*var a = parseFloat(prompt("Введите число X: "));
+        var b = parseFloat(prompt("Введите число Y: "));
+        if (b === 0) {
+            alert("Нельзя делить на ноль");
+        }
+        else {
+            if (a % b === 0) 
+            {
+                alert("Кратно");
+            }
+            else 
+            {
+                alert("Не кратно");
+            }
+        }*/
+
+        //8
+        /*var a = parseFloat(prompt("Введите число:"));
+        if (a % 3 == 0) 
+        {
+            alert("Число кратно 3");
+        } 
+        else 
+        {
+            alert("Число не кратно 3");
+        }
+
+        if (a % 5 == 0) 
+        {
+            alert("Число кратно 5");
+        } 
+        else 
+        {
+            alert("Число не кратно 5");
+        }
+
+        if (a % 7 == 0) 
+        {
+            alert("Число кратно 7");
+        } 
+        else 
+        {
+            alert("Число не кратно 7");
+        }*/
+
+        //9
+        /*var a = parseFloat(prompt("Введите число:"));
+        var b;
+        if (a >= 0) 
+        {
+            b = a; 
+        } 
+        else 
+        {
+            b = -a; 
+        }
+        alert("Модуль числа " + a + " равен " + b);*/
+
+        //10
+        /*var a = prompt("Введите целое число (не более 4 разрядов):");
+        if (a.length > 0 && a.length <= 4) 
+        {
+            var l = a.length;
+            var s = 0;
+            for (var i = 0; i < l; i++) 
+            {
+                s += Number(a[i]);
+            }
+            alert("Количество цифр в целом числе: " + l + "\nСумма цифр целого числа: " + s);
+        }
+        else 
+        {
+            alert("Error");
+        }*/
+        
+        //11
+        /* var a = parseInt(prompt("Введите свой рост: "));
+         var b = parseInt(prompt("Введите свой вес: "));
+         let d = (a-110) - b;
+         let c = b - (a-110);
+         if(b==a-110)
+         {
+             alert("Идеальный вес");
+         }
+         else if(b<a-110)
+         {
+             alert("Стоит набрать " + d);
+         }
+         else if(b>a-110)
+         {
+             alert("Стоит сбросить " + c);
+         }
+         else
+         {
+             alert("Error");
+         }*/
+
+    </script>
+</body>
+
+</html>
